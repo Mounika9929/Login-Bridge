@@ -1,19 +1,3 @@
-// import NoteItem from "../NoteItem";
-
-// const NoteList = ({ notes, onEdit, onDelete }) => {
-//   if (!notes || notes.length === 0) return <p>No notes found</p>;
-
-//   return (
-//     <ul>
-//       {notes.map((note) => (
-//         <NoteItem key={note.id} note={note} onEdit={onEdit} onDelete={onDelete} />
-//       ))}
-//     </ul>
-//   );
-// };
-
-// export default NoteList;
-
 import NoteItem from "../NoteItem";
 import './index.css'
 
