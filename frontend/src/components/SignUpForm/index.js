@@ -15,60 +15,6 @@
 //         const userDetails = {name, email, password, address};
 //         try {
 //             const options = {
-//             method: "POST",
-//             headers: {
-//           "Content-Type": "application/json", // <-- important
-//         },
-//             body: JSON.stringify(userDetails),
-//         };
-//         const url = "http://localhost:5000/signup"
-//         const response = await fetch(url,options);
-//         const data = await response.json()
-//         console.log(data)
-//         if(response.ok) {
-//             setErr(false);
-//             setAddress("");
-//             setErrMsg("");
-//             setName("");
-//             setEmail("");
-//             setPassword("");
-//             navigate("/login")
-//         } else {
-//             const errMsg = data.err_msg;
-//             setErrMsg(errMsg);
-//             setErr(true);
-//         }
-//         } catch(e) {
-//             setErr(true);
-//             setErrMsg("Network error");
-//         }
-//     }
-
-//     const onLogin = () => {
-//         navigate("/login")
-//     }
-
-//     return (
-//         <div>
-//             <button type="button" onClick={onLogin}>Login</button>
-//             <form onSubmit={addUser}>
-//                 <label htmlFor="name">Name</label>
-//                 <input id="name" type="text" placeholder="Enter Your Name" value={name} onChange={e => setName(e.target.value)} required />
-//                 <label htmlFor="email">Email</label>
-//                 <input id="email" type="text" placeholder="Enter Your Email" value={email} onChange={e => setEmail(e.target.value)} required />
-//                 <label htmlFor="password">Password</label>
-//                 <input id="password" type="password" placeholder="Enter Your Password" value={password} onChange={e => setPassword(e.target.value)} required />
-//                 <label htmlFor="address">Address</label>
-//                 <input id="address" type="text" placeholder="Enter Your Address" value={address} onChange={e => setAddress(e.target.value)} required />
-//                 <button type="submit">Signup</button>
-//             </form>
-//             {isErr && <p>{errMsg}</p>}
-//         </div>
-//     )
-// }
-
-// export default SignUpForm
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './index.css'
