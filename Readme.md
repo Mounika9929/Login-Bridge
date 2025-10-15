@@ -13,6 +13,9 @@ It features secure login, signup, and protected routes with token validation —
 
 ---
 
+[![Watch the video](https://img.icons8.com/ios-filled/100/000000/video.png)]( https://drive.google.com/file/d/1JX2oCU-m-6aGYwAmawtfUfgB7VHRmzkS/view?usp=drivesdk)
+
+
 ## 🚀 Features
 
 - 🧾 **User Signup & Login**
