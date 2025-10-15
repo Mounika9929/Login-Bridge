@@ -1,7 +1,3 @@
-Sure 👍 — here’s your **clean, complete `README.md` for Login Bridge**, **without** the “Code Quality & Documentation” section:
-
----
-
 ````markdown
 # 🔐 Login Bridge
 
@@ -34,7 +30,7 @@ It features secure login, signup, and protected routes with token validation —
 |-------|-------------|
 | **Frontend** | React, React Router, Tailwind CSS |
 | **Backend** | Node.js, Express.js |
-| **Database** | SQLite (can be replaced with MongoDB/MySQL) |
+| **Database** | SQLite |
 | **Authentication** | JSON Web Token (JWT) |
 
 ---
@@ -49,7 +45,7 @@ git clone https://github.com/Mounika9929/LoginBridge.git
 ### 2️⃣ Setup Backend
 
 ```bash
-cd server
+cd backend
 npm install
 node server.js
 ```
@@ -57,7 +53,7 @@ node server.js
 ### 3️⃣ Setup Frontend
 
 ```bash
-cd client
+cd frontend
 npm install
 npm start
 ```
@@ -68,15 +64,56 @@ npm start
 
 ```
 LoginBridge/
-├── client/          # React frontend
+├── frontend/                  # React frontend (tracked normally)
 │   ├── src/
+│   │   ├── components/        # All React components
+│   │   │   ├── Header/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── LoginForm/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── Logout/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── SignupForm/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── Profile/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── Home/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── ProtectedRoute/
+│   │   │   │   ├── index.js
+│   │   │   ├── NotFound/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── UpdateProfile/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── UpdatePwd/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── Notes/         # Notes feature components
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── NotesForm/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   ├── NotesList/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   │── NotesItem/
+│   │   │   │   ├── index.js
+│   │   │   │   └── index.css
+│   │   │   │   └── UpdatePwd/
 │   ├── public/
 │   └── package.json
-├── server/          # Express backend
-│   ├── controllers/
-│   ├── routes/
-│   ├── models/
-│   ├── database.db
+├── backend/          # Express backend
+│   ├── package.json
+│   ├── usersdata.db
 │   └── server.js
 └── README.md
 ```
@@ -123,9 +160,4 @@ This project is licensed under the **MIT License** — feel free to use and modi
 
 ⭐ *Login Bridge — Connecting Users Securely Across the Web.*
 
-```
-
----
-
-Would you like me to also create a **small “API Endpoints” section** next (listing `/register`, `/login`, etc.) to include in the README? It makes the documentation even more developer-friendly.
 ```
