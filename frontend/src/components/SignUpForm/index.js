@@ -1,20 +1,3 @@
-// import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
-
-// const SignUpForm = () => {
-//     const [name, setName] = useState("");
-//     const [email, setEmail] = useState("");
-//     const [password, setPassword] = useState("");
-//     const [address, setAddress] = useState("");
-//     const [errMsg, setErrMsg] = useState("");
-//     const [isErr, setErr] = useState(false);
-//     const navigate = useNavigate();
-
-//     const addUser = async (event) => {
-//         event.preventDefault();
-//         const userDetails = {name, email, password, address};
-//         try {
-//             const options = {
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './index.css'
