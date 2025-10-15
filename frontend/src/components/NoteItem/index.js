@@ -1,17 +1,3 @@
-// const NoteItem = ({ note, onEdit, onDelete }) => {
-//   return (
-//     <li>
-//       <h4>{note.title}</h4>
-//       <p>{note.content}</p>
-//       <small>{new Date(note.created_at).toLocaleString()}</small>
-//       <br />
-//       <button onClick={() => onEdit(note)}>Edit</button>
-//       <button onClick={() => onDelete(note.id)}>Delete</button>
-//     </li>
-//   );
-// };
-
-// export default NoteItem;
 import './index.css'
 
 const NoteItem = ({ note, onEdit, onDelete }) => {
