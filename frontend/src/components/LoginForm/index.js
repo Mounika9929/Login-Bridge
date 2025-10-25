@@ -20,7 +20,7 @@ const LoginForm = () => {
       },
       body: JSON.stringify(userDetails),
     };
-    const url = "http://localhost:5000/login";
+    const url = "https://login-bridge.onrender.com/login";
     const response = await fetch(url, options);
     const data = await response.json();
     if (response.ok) {
