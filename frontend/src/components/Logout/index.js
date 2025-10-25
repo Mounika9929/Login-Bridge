@@ -1,22 +1,3 @@
-// import Cookies from 'js-cookie'
-// import { useNavigate } from 'react-router-dom'
-
-// const Logout = () => {
-//     const navigate = useNavigate()
-//     const onLogout = () => {
-//         Cookies.remove('jwt_token')
-//         navigate('/login')
-//     }
-
-//     return (
-//         <div>
-//             <button type="button" onClick={onLogout}>Logout</button>
-//         </div>
-//     )
-// }
-
-// export default Logout
-
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
 import './index.css'
