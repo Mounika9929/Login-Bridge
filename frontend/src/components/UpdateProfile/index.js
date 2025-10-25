@@ -12,7 +12,7 @@ const UpdateProfile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       const token = Cookies.get("jwt_token");
-      const res = await fetch("http://localhost:5000/profile", {
+      const res = await fetch("https://login-bridge.onrender.com/profile", {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
@@ -28,7 +28,7 @@ const UpdateProfile = () => {
   const updateProfile = async (e) => {
     e.preventDefault();
     const token = Cookies.get("jwt_token");
-    const res = await fetch("http://localhost:5000/update-profile", {
+    const res = await fetch("https://login-bridge.onrender.com/update-profile", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
