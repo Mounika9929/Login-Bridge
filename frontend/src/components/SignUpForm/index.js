@@ -20,7 +20,7 @@ const SignUpForm = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userDetails),
       };
-      const url = "http://localhost:5000/signup";
+      const url = "https://login-bridge.onrender.com/signup";
       const response = await fetch(url, options);
       const data = await response.json();
       if (response.ok) {
