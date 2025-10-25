@@ -8,7 +8,7 @@ const Profile = () => {
 
   useEffect(() => {
     const getDetails = async () => {
-      const url = "http://localhost:5000/profile";
+      const url = "https://login-bridge.onrender.com/profile";
       const jwtToken = Cookies.get("jwt_token");
       const options = {
         method: "GET",
@@ -35,7 +35,7 @@ const Profile = () => {
       <Header />
       <div className="max-w-2xl mx-auto mt-6 bg-white p-6 rounded-lg shadow-md">
         <h1 className="text-2xl font-bold mb-4">Profile</h1>
-        {userDetails ? (
+        {userDetails? (
           <div className="space-y-2">
             <p>
               <span className="font-semibold">Name:</span> {userDetails.name}
