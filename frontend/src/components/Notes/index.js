@@ -14,7 +14,7 @@ const Notes = () => {
 
   const fetchNotes = async () => {
     try {
-      const res = await fetch("http://localhost:5000/notes", {
+      const res = await fetch("https://login-bridge.onrender.com/notes", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -33,7 +33,7 @@ const Notes = () => {
     try {
       let res;
       if (editingNote) {
-        res = await fetch(`http://localhost:5000/notes/${editingNote.id}`, {
+        res = await fetch(`https://login-bridge.onrender.com/notes/${editingNote.id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const Notes = () => {
           body: JSON.stringify(noteData),
         });
       } else {
-        res = await fetch("http://localhost:5000/add-note", {
+        res = await fetch("https://login-bridge.onrender.com/add-note", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -65,7 +65,7 @@ const Notes = () => {
   const handleEdit = (note) => setEditingNote(note);
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/notes/${id}`, {
+      const res = await fetch(`https://login-bridge.onrender.com/notes/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
