@@ -12,7 +12,7 @@ const UpdatePwd = () => {
   const updatePwd = async (event) => {
     event.preventDefault();
     try {
-      const url = "http://localhost:5000/update-password";
+      const url = "https://login-bridge.onrender.com/update-password";
       const jwtToken = Cookies.get("jwt_token");
       const options = {
         method: "PUT",
